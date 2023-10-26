@@ -1,0 +1,22 @@
+.header__top {
+  position: relative;
+  height: 95px;
+}
+main {
+  position: relative;
+  background-color: rgba(84, 146, 201);
+  color: rgba(255, 255, 255, 0.862);
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  width: 95%;
+  padding: 2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}

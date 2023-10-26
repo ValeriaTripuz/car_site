@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 2rem 0;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 0.8rem 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.883);
+  background-color: transparent;
+  margin: 1.5rem 0;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.894);
+  color: black;
+  transition: all 0.5s;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  /* height: 100%; */
+}
+
+.header__top {
+  height: 7%;
+  background-color: white;
+}
+
+.header__logo {
+  position: relative;
+  display: inline-block;
+  top: 5%;
+  left: 5%;
+}
+
+.logo {
+  width: 20vh;
+}
+
+.header__menue {
+  position: relative;
+  display: inline-block;
+  left: 25%;
+  top: -20%;
+  width: fit-content;
+}
+
+.menue {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.menue__item {
+  color: black;
+  font-weight: 300;
+}
+
+.header__bottom {
+  position: relative;
+  height: 90%;
+  background-image: url("../images/header_background.jpeg");
+  background-size: no-repeat;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+}
+
+.header__heading_light {
+  position: relative;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.header__heading {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3.5rem;
+}
+
+.header__bottom__headings {
+  position: relative;
+  top: 17%;
+}
+
+main {
+  position: relative;
+  height: fit-content;
+}
+
+.main__advanteges {
+  position: relative;
+  height: 35vh;
+  margin: 13rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.advanteges__item {
+  width: 20%;
+  text-align: center;
+  border: 3px solid rgba(84, 146, 201);
+  box-shadow: 3px 5px 19px grey;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 20rem;
+}
+
+.icon {
+  width: 5rem;
+}
+
+.main__services {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(27, 117, 195, 0.676);
+  height: 100vh;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.main__services__item {
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 40%;
+  height: 20rem;
+  overflow: hidden;
+  align-items: left;
+}
+
+.main__services__item h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.auction_europe,
+.auction_usa,
+.selection_blr,
+.selection_europe {
+  position: relative;
+  background-size: no-repeat;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+}
+
+.auction_europe {
+  background-image: url("../images/auction_europe.jpeg");
+}
+
+.auction_usa {
+  background-image: url("../images/auction_usa.jpeg");
+}
+
+.selection_blr {
+  background-image: url("../images/selection_blr.jpeg");
+}
+.selection_europe {
+  background-image: url("../images/selection_europe.jpeg");
+}
+
+.btn__more {
+  position: absolute;
+  color: black;
+  margin: 0;
+  left: 5%;
+  box-shadow: 3px 4px 10px grey;
+}
+
+.btn__more:hover {
+  background-color: rgb(45, 103, 154);
+  color: rgba(255, 255, 255, 0.943);
+  box-shadow: 3px 5px 10px grey;
+}
+
+/* Cookies alert */
+#cookie_note {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#cookie_note {
+  display: flex;
+  flex-direction: column;
+}
+
+#cookie_note p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: left;
+  color: black;
+}
+
+.button__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn__cookie {
+  margin-bottom: 0;
+  /* padding: 0; */
+  background-color: black;
+}
+
+@media (min-width: 576px) {
+  #cookie_note.show {
+    display: flex;
+  }
+}
+
+@media (max-width: 575px) {
+  #cookie_note.show {
+    display: block;
+    text-align: left;
+  }
+}
