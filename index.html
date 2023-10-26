@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <title>Car import</title>
   </head>
   <body>
     <header>
       <div class="header__top">
         <div class="header__logo">
-          <img class="logo" src="./images/car_import_logo.png" alt="Logo" />
+            <a href="../index.html"
+            ><img class="logo" src="../images/car_import_logo.png" alt="Logo"
+          /></a>
         </div>
         <div class="header__menue">
           <ul class="menue">
-            <li><a class="menue__item" href="#">About us</a></li>
-            <li><a class="menue__item" href="#">Services</a></li>
-            <li><a class="menue__item" href="#">Contacts</a></li>
-            <li><a class="menue__item" href="#">Portfolio</a></li>
+            <li><a class="menue__item" href="./pages/about_us.html">About us</a></li>
+            <li><a class="menue__item" href="./pages/services.html">Services</a></li>
+            <li><a class="menue__item" href="./pages/contacts.html">Contacts</a></li>
+            <li><a class="menue__item" href="./pages/portfolio.html">Portfolio</a></li>
           </ul>
         </div>
       </div>
@@ -25,17 +29,19 @@
         <div class="header__bottom__headings">
           <h3 class="header__heading_light">Selection of cars from Europe</h3>
           <h1 class="header__heading">Cars from Europe</h1>
-          <button class="btn btn__services">Order</button>
+          <button class="btn btn__services"><a href="#order-form">Order</a></button>
         </div>
       </div>
     </header>
     <main>
       <div class="main__advanteges">
+        <h2>What do we offer</h2>
+        <div class="main__advanteges__wrapper">
         <div class="advanteges__item">
           <div class="advanteges__item__icon">
             <img class="icon" src="./images/consultation_icon.png" alt="Consultation-icon">
           </div>
-          <h3>Consultation</h3>
+          <h3>CONSULTATION</h3>
           <p>
             Free and high-quality preliminary consultation with answers to all
             questions by phone
@@ -70,6 +76,7 @@
             You can choose the perfect vehicle based on your preferences and budget.
         </p>
       </div>
+      </div>
     </div>
       <div class="main__services">
         <div class="main__services__item auction_europe">
@@ -97,11 +104,60 @@
      
     </div>
     </div>
-    <div class="main_reviews">
-        <h2>What our clients have to say</h2>
+    <div id="order-form"class="main__order-form">
+        <h2 >Contuct us </h2>
+
+        <form >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="tel">Phone number:</label>
+            <input type="tel" id="tel" name="tel" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="policy__wrapper">
+            <input type="checkbox" name="policy" id="policy"> 
+            <label for="policy">I accept <a href="./pages/policy.html">Privacy policy</a></label>
+        </div>
+            <button class="btn submit" type="submit">Send</button>
+            <!-- <input type="submit" value="Перейти" onclick="validateForm()"> -->
+        </form>
     </div>
     </main>
-    <!-- START Cookie-Alert -->
+  
+    <footer>
+        <div class="footer__logo__wrapper">
+            <a href="../index.html"
+            ><img class="logo" src="../images/car_import_logo.png" alt="Logo"
+          /></a>
+        </div>
+        <div class="footer__menue__wrapper">
+              <h3>Menue</h3>
+                <ul class="footer__menue">
+                  <li><a class="menue__item" href="./pages/about_us.html">About us</a></li>
+                  <li><a class="menue__item" href="./pages/services.html">Services</a></li>
+                  <li><a class="menue__item" href="./pages/contacts.html">Contacts</a></li>
+                  <li><a class="menue__item" href="./pages/portfolio.html">Portfolio</a></li>
+                </ul>
+        </div>
+        <div class="footer__contacts__wrapper">
+            <h3>Contacts</h3>
+            <div class="contacts__wrapper">
+<div><span><strong>Phone</strong></span><span>+375 44 786 98 56</span></div>
+<div><span><strong>Email</strong></span><span>auto-import@gmail.com</span></div>
+<div> <span><strong>Address</strong></span><span>str.Eliksert 354</span></div>
+</div>
+<div class="social-networks">
+  <a href="https://www.instagram.com/"><img class="social-networks_icon" src="./images/instagram_icon.png" alt="instagram"></a>
+  <a href="https://www.facebook.com/"><img class="social-networks_icon" src="./images/facebook_icon.png" alt="facebook"></a>
+  <a href="https://www.twitter.com/"> <img class="social-networks_icon" src="./images/twitter_icon.png" alt="twitter"></a>
+</div>
+        </div>
+    </footer>
+      <!-- START Cookie-Alert -->
 <div id="cookie_note">
     <p>Мы используем файлы cookies для улучшения работы сайта. Оставаясь на нашем сайте, вы соглашаетесь с условиями
         использования файлов cookies. Чтобы ознакомиться с нашими Положениями о конфиденциальности и об использовании
@@ -113,7 +169,7 @@
 </div>
 </div>
 <!-- END Cookie-Alert -->
-    <footer></footer>
+<script src="./scripts/form.js"></script>
     <script src="./scripts/cookie_alert.js"></script>
     <script src="./scripts/main.js"></script>
   </body>

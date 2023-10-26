@@ -1,6 +1,7 @@
 .header__top {
   position: relative;
   height: 95px;
+  width: 100%;
 }
 main {
   position: relative;
@@ -10,6 +11,7 @@ main {
   border-radius: 10px;
   width: 95%;
   padding: 2rem;
+  z-index: 1;
 }
 
 h1 {
@@ -19,4 +21,35 @@ h1 {
 
 p {
   margin: 1rem 0;
+}
+
+/*  */
+.nav__showmenu {
+  display: none;
+}
+/*  */
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .menue {
+    display: none;
+  }
+  .header__top {
+    display: block;
+  }
+  .header__menue {
+    position: relative;
+    background-color: red;
+    top: 10%;
+    left: 60%;
+  }
+  .nav__showmenu {
+    font-size: 3rem;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
 }

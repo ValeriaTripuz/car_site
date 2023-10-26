@@ -1,0 +1,52 @@
+ul li {
+  list-style-type: none;
+  margin: 0 25px;
+}
+
+ul li:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  position: relative;
+  height: 100vh;
+}
+
+.header__top {
+  height: 7%;
+  background-color: white;
+}
+
+.header__logo {
+  position: relative;
+  display: inline-block;
+  top: 5%;
+  left: 5%;
+}
+
+.logo {
+  width: 20vh;
+}
+
+.header__menue {
+  position: relative;
+  display: inline-block;
+  left: 25%;
+  top: -20%;
+  width: fit-content;
+}
+
+.menue {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+.menue__item {
+  color: black;
+  font-weight: 300;
+}
