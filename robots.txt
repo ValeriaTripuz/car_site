@@ -1,0 +1,7 @@
+User-agent: *
+Dissallow: /form.html
+Dissallow: /cookies_page.html
+Dissallow: /footer.html
+Dissallow: /header.html
+Dissallow: /policy.html
+Dissallow: /submit.html

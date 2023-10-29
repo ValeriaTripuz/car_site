@@ -13,11 +13,11 @@ a {
 }
 header {
   position: relative;
-  height: 100vh;
+  height: 8vh;
 }
 
 .header__top {
-  height: 7%;
+  height: fit-content;
   background-color: white;
 }
 
@@ -49,4 +49,57 @@ header {
 .menue__item {
   color: black;
   font-weight: 300;
+}
+
+.header__burger-menue {
+  display: none;
+}
+
+.header__burger-icon {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .menue {
+    display: none;
+  }
+
+  .header__burger-menue {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: 0;
+    /* background-color: black; */
+  }
+  .header__burger-icon {
+    display: block;
+  }
+  .header__menue {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .menue {
+    display: none;
+  }
+}
+
+.menue-burger {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(84, 146, 201);
+}
+
+.header__burger-icon img {
+  width: 4rem;
+  margin: 2rem;
+  right: 0;
+  top: 0;
+  position: fixed;
 }

@@ -1,0 +1,17 @@
+.btn {
+  font-weight: 600;
+  padding: 0.8rem 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.883);
+  background-color: transparent;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.894);
+  color: black;
+  transition: all 0.5s;
+}

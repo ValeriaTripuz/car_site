@@ -1,0 +1,37 @@
+main {
+  position: relative;
+  margin: 7rem 0;
+}
+
+.first__wrapper {
+  position: relative;
+  height: 55vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.second__wrapper {
+  margin: 5rem 0;
+}
+
+.main__left {
+  box-shadow: 5px 5px 10px grey;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contacts {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.contacts span {
+  font-size: 1.4rem;
+}
+
+.form__wrapper {
+  margin: 5rem 0;
+}

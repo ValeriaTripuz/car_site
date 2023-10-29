@@ -4,35 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="stylesheet" href="./styles/cookies_alert.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <title>Car import</title>
   </head>
   <body>
-    <header>
-      <div class="header__top">
-        <div class="header__logo">
-            <a href="../index.html"
-            ><img class="logo" src="../images/car_import_logo.png" alt="Logo"
-          /></a>
-        </div>
-        <div class="header__menue">
-          <ul class="menue">
-            <li><a class="menue__item" href="./pages/about_us.html">About us</a></li>
-            <li><a class="menue__item" href="./pages/services.html">Services</a></li>
-            <li><a class="menue__item" href="./pages/contacts.html">Contacts</a></li>
-            <li><a class="menue__item" href="./pages/portfolio.html">Portfolio</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <div class="header__bottom__headings">
-          <h3 class="header__heading_light">Selection of cars from Europe</h3>
-          <h1 class="header__heading">Cars from Europe</h1>
-          <button class="btn btn__services"><a href="#order-form">Order</a></button>
-        </div>
-      </div>
-    </header>
+    <iframe src="./pages/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    
+    <div class="header__bottom">
+      <div class="header__bottom__headings">
+         <h3 class="header__heading_light">Selection of cars from Europe</h3>
+         <h1 class="header__heading">Cars from Europe</h1>
+         <button class="btn btn__services">
+           <a href="#order-form">Order</a>
+         </button>
+       </div>
+     </div>
     <main>
       <div class="main__advanteges">
         <h2>What do we offer</h2>
@@ -82,81 +72,35 @@
         <div class="main__services__item auction_europe">
             <h3>Auction
                 Europe</h3>
-            <button class="btn btn__more">Read more</button>
+            <button class="btn btn__more" onclick="location='../pages/services.html'">Read more</button>
         </div>
         <div class="main__services__item auction_usa">
       
             <h3>Auction
                 USA</h3>
-            <button class="btn btn__more">Read more</button>
+            <button class="btn btn__more" onclick="location='../pages/services.html'">Read more</button>
         </div>
         <div class="main__services__item selection_blr">
 
             <h3>Auto-selection
                 in Belarus</h3>
-            <button class="btn btn__more">Read more</button>
+            <button class="btn btn__more" onclick="location='../pages/services.html'">Read more</button>
         </div>
         <div class="main__services__item selection_europe">
             <h3>Auto-selection
                 in Europe</h3>
-            <button class="btn btn__more">Read more</button>
+            <button class="btn btn__more" onclick="location='../pages/services.html'">Read more</button>
         </div>
      
     </div>
     </div>
     <div id="order-form"class="main__order-form">
         <h2 >Contuct us </h2>
-
-        <form >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="tel">Phone number:</label>
-            <input type="tel" id="tel" name="tel" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <div class="policy__wrapper">
-            <input type="checkbox" name="policy" id="policy"> 
-            <label for="policy">I accept <a href="./pages/policy.html">Privacy policy</a></label>
-        </div>
-            <button class="btn submit" type="submit">Send</button>
-            <!-- <input type="submit" value="Перейти" onclick="validateForm()"> -->
-        </form>
+        <iframe src="./pages/form.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
     </div>
     </main>
   
-    <footer>
-        <div class="footer__logo__wrapper">
-            <a href="../index.html"
-            ><img class="logo" src="../images/car_import_logo.png" alt="Logo"
-          /></a>
-        </div>
-        <div class="footer__menue__wrapper">
-              <h3>Menue</h3>
-                <ul class="footer__menue">
-                  <li><a class="menue__item" href="./pages/about_us.html">About us</a></li>
-                  <li><a class="menue__item" href="./pages/services.html">Services</a></li>
-                  <li><a class="menue__item" href="./pages/contacts.html">Contacts</a></li>
-                  <li><a class="menue__item" href="./pages/portfolio.html">Portfolio</a></li>
-                </ul>
-        </div>
-        <div class="footer__contacts__wrapper">
-            <h3>Contacts</h3>
-            <div class="contacts__wrapper">
-<div><span><strong>Phone</strong></span><span>+375 44 786 98 56</span></div>
-<div><span><strong>Email</strong></span><span>auto-import@gmail.com</span></div>
-<div> <span><strong>Address</strong></span><span>str.Eliksert 354</span></div>
-</div>
-<div class="social-networks">
-  <a href="https://www.instagram.com/"><img class="social-networks_icon" src="./images/instagram_icon.png" alt="instagram"></a>
-  <a href="https://www.facebook.com/"><img class="social-networks_icon" src="./images/facebook_icon.png" alt="facebook"></a>
-  <a href="https://www.twitter.com/"> <img class="social-networks_icon" src="./images/twitter_icon.png" alt="twitter"></a>
-</div>
-        </div>
-    </footer>
+    <iframe src="./pages/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"> </iframe>
       <!-- START Cookie-Alert -->
 <div id="cookie_note">
     <p>Мы используем файлы cookies для улучшения работы сайта. Оставаясь на нашем сайте, вы соглашаетесь с условиями
@@ -165,7 +109,7 @@
         <div class="button__wrapper">
     <button class="btn btn__cookie cookie_accept">Accept all</button>
     <button class="btn btn__cookie cookie_reject">Reject all</button>
-    <button class="btn btn__cookie cookie_settings">Cookie settings</button>
+  
 </div>
 </div>
 <!-- END Cookie-Alert -->

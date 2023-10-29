@@ -11,6 +11,7 @@ footer {
 footer h3 {
   text-transform: uppercase;
   font-weight: 800;
+  width: fit-content;
 }
 
 .footer__logo__wrapper img {
@@ -21,6 +22,7 @@ footer h3 {
 .footer__menue {
   display: flex;
   flex-direction: column;
+  width: fit-content;
 }
 
 .footer__menue__wrapper {
@@ -33,6 +35,7 @@ footer h3 {
 }
 
 .footer__menue__wrapper li {
+  width: fit-content;
   margin: 0;
   margin-bottom: 0.2rem;
 }
@@ -41,6 +44,10 @@ footer h3 {
   width: 20rem;
   margin: 0.5rem 0;
   font-size: 1.2rem;
+}
+
+.contacts__wrapper {
+  width: fit-content;
 }
 
 .contacts__wrapper div {
@@ -52,4 +59,67 @@ footer h3 {
 .social-networks img {
   margin: 0.6rem 0;
   width: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .footer__logo__wrapper img {
+    width: 8rem;
+  }
+
+  .footer__menue__wrapper .menue__item {
+    font-size: 1.1rem;
+  }
+  .footer__contacts__wrapper div {
+    font-size: 1.1rem;
+  }
+
+  .footer__menue__wrapper {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__logo__wrapper img {
+    width: 5rem;
+  }
+
+  .footer__menue__wrapper .menue__item {
+    font-size: 0.8rem;
+  }
+  .footer__contacts__wrapper div {
+    font-size: 0.8rem;
+  }
+
+  .footer__menue__wrapper {
+    margin: 0 1rem;
+    width: fit-content;
+  }
+  .contacts__wrapper div {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logo__wrapper img {
+    width: 4rem;
+  }
+
+  .footer__menue__wrapper .menue__item {
+    font-size: 1.2rem;
+  }
+  .footer__contacts__wrapper div {
+    font-size: 1rem;
+  }
+
+  .footer__menue__wrapper {
+    margin: 0 1rem;
+    width: fit-content;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+  .social-networks img {
+    width: 1.5rem;
+  }
 }

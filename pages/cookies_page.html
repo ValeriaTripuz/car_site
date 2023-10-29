@@ -3,37 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/cookies.css" />
-
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
     <title>Cookies policy</title>
   </head>
   <body>
-    <div class="header__top">
-      <div class="header__logo">
-        <a href="../index.html"
-          ><img class="logo" src="../images/car_import_logo.png" alt="Logo"
-        /></a>
-      </div>
-
-      <div class="header__menue">
-        <span class="nav__showmenu">&#9776;</span>
-        <ul class="menue">
-          <li>
-            <a class="menue__item" href="../pages/about_us.html">About us</a>
-          </li>
-          <li>
-            <a class="menue__item" href="../pages/services.html">Services</a>
-          </li>
-          <li>
-            <a class="menue__item" href="../pages/contacts.html">Contacts</a>
-          </li>
-          <li>
-            <a class="menue__item" href="../pages/portfolio.html">Portfolio</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <iframe
+      src="../pages/header.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
     <main>
       <h1>Cookie Policy</h1>
       <p>
@@ -91,6 +70,10 @@
         controls to accept or refuse cookies.
       </p>
     </main>
+    <iframe
+      src="../pages/footer.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
     <script src="../scripts/main.js"></script>
   </body>
 </html>

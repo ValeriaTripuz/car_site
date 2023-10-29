@@ -26,14 +26,16 @@ function validateForm() {
 
   if (error != "") {
     alert(error);
+    console.log(error);
     return false;
+  } else {
+    console.log("right");
+    send.addEventListener("click", (e) => {
+      e.preventDefault();
+      location = "./pages/submit.html";
+    });
   }
 }
-
-send.addEventListener("click", (e) => {
-  e.preventDefault();
-  location = "./pages/submit.html";
-});
 
 function validateEmail(email) {
   const re = /\S+@\S+\.\S+/;

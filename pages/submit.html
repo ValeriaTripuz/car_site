@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/submit.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/about_us.css" />
+    <title>Thank you!</title>
+  </head>
+  <body>
+    <iframe
+      src="../pages/header.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
+    <main>
+      <h1>Thank you for filling out the form !</h1>
+      <h2>We will answer you shortly</h2>
+    </main>
+    <iframe
+      src="../pages/footer.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
+  </body>
+</html>

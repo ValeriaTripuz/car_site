@@ -23,12 +23,6 @@ p {
   margin: 1rem 0;
 }
 
-/*  */
-.nav__showmenu {
-  display: none;
-}
-/*  */
-
 @media (min-width: 1200px) {
 }
 
